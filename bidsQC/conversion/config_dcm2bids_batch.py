@@ -13,7 +13,7 @@ pathToStudyFolder = os.path.join(os.sep, "projects", "sanlab", "shared", "ctnTut
 pathToDicomFolder = os.path.join(os.sep, "projects", "sanlab", "shared", "REV_examples")
 pathToConversionFolder = os.path.join(pathToStudyFolder, "bidsQC", "conversion")  # Contains subject_list.txt, config file, and dcm2bids_batch.py
 pathToConfigFile = os.path.join(pathToConversionFolder, "study_config.json")  # path to and name of config file
-singularity_image = os.path.join(os.sep, "projects", "sanlab", "shared", "containers", "dcm2bids-de8bc00ebf719a40d37fdbe56f80be07112ecb4c.sif") # Set equal to "NA" if you are running the script locally
+singularity_image = os.path.join(os.sep, "projects", "sanlab", "shared", "containers", "dcm2bids_latest_2021-12-08.sif") # Set equal to "NA" if you are running the script locally
 
 # These variables are also used in the main script and need to be defined here.
 # If they don't exist, they will be created by the script
