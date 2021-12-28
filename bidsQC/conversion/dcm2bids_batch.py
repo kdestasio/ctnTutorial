@@ -1,6 +1,7 @@
 # Import libraries and configuration file
 import os
 import subprocess
+import random
 import config_dcm2bids_batch as cfg
 
 # Main function
@@ -27,7 +28,7 @@ def batch_jobs(subject_list, path_dicoms, path_config, path_bidsdata):
         subjectpath = os.path.join(path_dicoms, subjectdir)
         if os.path.isdir(subjectpath):
             write_to_outputlog(subjectdir + os.linesep)
-            sleeptime = os.urandom.uniform(0, 10)
+            sleeptime = random.uniform(0, 10)
             if cfg.run_local:
                 batch_cmd = 'dcm2bids -d {subjectpath} -s {wave} -p {subject} -c {path_config} -o {path_bidsdata}  --forceDcm2niix --clobber'.format(subjectpath=subjectpath,  wave=wave, subject=subject, path_config=path_config,  path_bidsdata=path_bidsdata)
             else:
