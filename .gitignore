@@ -1,3 +1,9 @@
+#Files
+.vscode
+.DS_Store
+
+# Folders
+containers/
 bids_data/
 __pycache__/
 *logs*/
