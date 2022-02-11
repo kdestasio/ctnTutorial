@@ -1,10 +1,15 @@
 {
-    "Name": "ctnTutorial",
-    "BIDSVersion": "1.6.0",
-    "DatasetType": "raw",
-    "License": "Please do not share the sample data",
-    "Authors": [
-      "Krista DeStasio"
-    ],
-    "Acknowledgements": "Special thanks to Jolinda Smith for help in formatting this dataset in BIDS and the University of Oregon Talapas Help Desk team for technical support."
-  }
+  "Name": "CTN tutorial sample data",
+  "BIDSVersion": "1.6.0",
+  "DatasetType": "raw",
+  "License": "Don't share the data",
+  "Authors": [
+    "The Doctor",
+    "Rose Tyler"
+  ],
+  "Acknowledgements": "Special thanks to people and things.",
+  "HowToAcknowledge": "Please cite this paper: https://www.ncbi.nlm.nih.gov/pubmed/somepaperidentifier",
+  "Funding": [
+    "Deep pockets"
+  ]
+}
